@@ -265,8 +265,9 @@ class DAPIWebSocket(object):
         while True:
             result = self.receive()
             if result:
-                if(result.find('"dapi_result"') > 0):
-                    obj = json.loads(result)
+                obj = json.loads(result)
+                if obj["object"] == "dapi_result" and obj["data"]["data"]["username"] == target_username:
+                    print "obj", obj
                     return obj["data"]["data"]
             
             sleep(.1)
