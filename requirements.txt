@@ -7,4 +7,4 @@ protobuf==2.5.0
 dnspython==1.12.0
 x11_hash==1.4
 git+https://github.com/mazaclub/python-trezor@rev#egg=trezor
-websockets-client
+websocket-client==0.35.0
