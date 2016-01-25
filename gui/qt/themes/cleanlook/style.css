@@ -455,10 +455,10 @@ QHeaderView::section { /* Table Header Sections */
     font-weight:bold;
     font-size:11px;
     outline:0;
-    border:0px solid #fff;
+    border:0;
     border-right:1px solid #56ABD8;
     padding-left:2px;
-    /* padding-right:10px; */
+    padding-right:10px;
     padding-top:1px;
     padding-bottom:1px;
 }

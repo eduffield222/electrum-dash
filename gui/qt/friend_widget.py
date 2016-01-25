@@ -47,9 +47,9 @@ class FriendWidget(MyTreeWidget):
             icon = QIcon(":icons/" + str(i["stars"]) + "_stars.png")
 
             item = QTreeWidgetItem( [ '', i["username"], str(len(i["addresses"])), "101,102,103"] )
-            item.setFont(1, QFont(MONOSPACE_FONT))
-            item.setFont(2, QFont(MONOSPACE_FONT))
-            item.setFont(3, QFont(MONOSPACE_FONT))
+            ## item.setFont(1, QFont(MONOSPACE_FONT)) ## this font is ugly
+            ## item.setFont(2, QFont(MONOSPACE_FONT))
+            ## item.setFont(3, QFont(MONOSPACE_FONT))
 
             if len(i["addresses"]) < 1:
                 item.setForeground(3, QBrush(QColor("#BC1E1E")))
